@@ -1,0 +1,118 @@
+body {
+  background: #f9f9f9; }
+
+.main-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+.main-header {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #ee6900; }
+  .main-header .pic {
+    width: 72px;
+    height: 18px;
+    margin: 14px auto; }
+    .main-header .pic img {
+      width: 100%;
+      height: 100%; }
+
+.main-content {
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  bottom: 48px;
+  left: 0;
+  width: 100%;
+  overflow: auto; }
+  .main-content .word {
+    width: 100%;
+    text-align: center; }
+    .main-content .word h2 {
+      font-size: 13px;
+      color: #000;
+      margin-top: 15px;
+      line-height: 25px;
+      font-weight: bold;
+      letter-spacing: 3px; }
+    .main-content .word h4 {
+      font-size: 9px;
+      color: #666;
+      margin-bottom: 20px; }
+  .main-content .img {
+    width: 100%;
+    display: flex; }
+    .main-content .img div {
+      width: 100%; }
+      .main-content .img div img {
+        width: 100%;
+        height: 100%; }
+  .main-content .stage {
+    width: 100%; }
+    .main-content .stage h3 {
+      font-size: 11px;
+      color: #000;
+      text-align: center;
+      line-height: 26px;
+      font-weight: bold;
+      margin-top: 15px;
+      letter-spacing: 3px; }
+    .main-content .stage p {
+      line-height: 31px;
+      font-size: 8px;
+      color: #666;
+      letter-spacing: 2.2px;
+      text-indent: 23px; }
+  .main-content .btn {
+    width: 67px;
+    height: 20px;
+    margin-top: 15px;
+    margin: 0 auto; }
+    .main-content .btn .More {
+      color: #ee6900;
+      border: 1px solid #ee6900;
+      border-radius: 2px;
+      width: 100%; }
+  .main-content .list {
+    line-height: 54px; }
+    .main-content .list h3 {
+      display: -webkit-box; }
+      .main-content .list h3 span {
+        display: block;
+        -webkit-box-flex: 1;
+        text-align: center; }
+
+.main-footer {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+  .main-footer nav {
+    width: 100%;
+    display: flex; }
+    .main-footer nav a {
+      flex: 1;
+      text-align: center; }
+      .main-footer nav a img {
+        width: 22px;
+        height: 20.5px;
+        display: block;
+        margin: 0 auto; }
+      .main-footer nav a span {
+        font-size: 10px;
+        line-height: 2; }
+      .main-footer nav a.on img.first {
+        background: url(../images/a55.png) no-repeat;
+        background-size: 100%; }
+      .main-footer nav a.on img.destination {
+        background: url(../images/a6.png) no-repeat;
+        background-size: 100%; }
+
+/*# sourceMappingURL=style.css.map */

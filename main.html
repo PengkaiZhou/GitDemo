@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="lib/fonts/font-awesome.min.css">
+	<link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+	<div ng-view></div>
+	<footer class="box-footer" >
+			<nav>
+				<a href="#/" class="icon right-icon">
+					<i class="fa fa-qrcode"></i>
+					<span>首页</span>
+				</a>
+				<a href="#/index2" class="icon right-icon">
+					<i class="fa fa-map-marker"></i>
+					<span>目的地</span>
+				</a>
+				<a href="#/index3" class="icon right-icon">
+					<i class="fa fa-truck"></i>
+					<span>自驾</span>
+				</a>
+			</nav>
+	</footer>
+
+	<script src="lib/js/angular.min.js"></script>
+	<script src="lib/js/angular-route.min.js"></script>
+	<script>
+		angular.module('myApp',['ngRoute'])
+            .config(['$routeProvider', function($routeProvider){
+                $routeProvider
+                .when('/',{
+                	templateUrl:'index.html'
+                })
+                .when('/index2',{
+                	templateUrl:'index2.html'
+                })
+                .when('/index3',{
+                	templateUrl:'index3.html'
+                })
+                .otherwise({
+                	redirectTo:'/'
+                });
+            }]);
+	</script>
+</body>
+</html>

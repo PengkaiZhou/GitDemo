@@ -1,0 +1,118 @@
+.box {
+  width: 100%; }
+  .box .box-header, .box .box-footer {
+    position: fixed; }
+
+html {
+  font-size: 625%; }
+
+body {
+  font-size: 16px; }
+
+.box-header {
+  width: 100%;
+  top: 0;
+  height: 44px;
+  background-size: 100% 100%;
+  z-index: 100; }
+  .box-header .title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    line-height: 130px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    top: 0;
+    margin: 20px 0 0 0; }
+  .box-header .nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    top: 0; }
+    .box-header .nav .nav_list {
+      display: -webkit-box;
+      margin: 0 20%;
+      background: #3b4d65;
+      border-radius: 40px;
+      overflow: hidden; }
+      .box-header .nav .nav_list li {
+        -webkit-box-flex: 1;
+        color: #65758e; }
+        .box-header .nav .nav_list li.list {
+          background: #01ca7e;
+          color: #dcf7e8; }
+  .box-header .header-box {
+    height: 100%;
+    padding: 0 10px;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    margin: 20px 0 0 0; }
+    .box-header .header-box .icon {
+      width: 27px;
+      height: 27px;
+      display: block;
+      background-size: 100%;
+      margin: 0 5px;
+      z-index: 1000; }
+      .box-header .header-box .icon i {
+        color: #fff;
+        padding: 0 10px; }
+    .box-header .header-box p {
+      color: #fff; }
+    .box-header .header-box.header-left {
+      float: left; }
+    .box-header .header-box.header-right {
+      float: right; }
+
+.box-footer {
+  width: 100%;
+  padding: 0 10px;
+  height: 48px;
+  box-sizing: border-box;
+  height: 48px;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  z-index: 10; }
+  .box-footer nav {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    margin-top: 2px; }
+    .box-footer nav a {
+      display: block;
+      -webkit-box-flex: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-box-pack: center;
+      width: 0;
+      text-align: center; }
+      .box-footer nav a img {
+        width: 10%;
+        height: 10%;
+        display: block;
+        margin: 0 auto; }
+        .box-footer nav a img.icon-on {
+          display: none; }
+      .box-footer nav a span {
+        display: block;
+        font-size: 10px;
+        margin-top: 2px;
+        color: #808080; }
+      .box-footer nav a.on img {
+        display: none; }
+        .box-footer nav a.on img.icon-on {
+          display: block; }
+      .box-footer nav a.on span {
+        color: #1e2e45; }
+
+/*# sourceMappingURL=base.css.map */

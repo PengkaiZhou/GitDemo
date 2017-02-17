@@ -1,0 +1,6 @@
+.box {
+  width: 100%; }
+  .box .box-header, .box .box-footer {
+    position: fixed; }
+
+/*# sourceMappingURL=box.css.map */
